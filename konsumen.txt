@@ -1,0 +1,16 @@
+CREATE TABLE `konsumen` (
+  `id_konsumen` int(10) NOT NULL,
+  `harga_pesanan` int(10) NOT NULL,
+  `total_pesanan` int(15) NOT NULL,
+  `id_pesanan` int(3) NOT NULL,
+  `nama_pesanan` varchar(128) NOT NULL,
+  `jumlah_pesanan` int(10) NOT NULL
+)
+
+
+INSERT INTO `konsumen` (`id_konsumen`, `harga_pesanan`, `total_pesanan`, `id_pesanan`, `nama_pesanan`, `jumlah_pesanan`) VALUES
+(1, 15000, 2, 1, 'mozarella', 2),
+(2, 20000, 3, 2, 'roti tawar manis', 3);
+
+
+SELECT * FROM `konsumen`;
