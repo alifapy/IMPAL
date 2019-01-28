@@ -1,0 +1,12 @@
+CREATE TABLE `bahan_makanan` (
+  `id_bahan` varchar(10) NOT NULL,
+  `nama_bahan` varchar(20) NOT NULL,
+  `jumlah_bahan` int(5) NOT NULL,
+  `harga_bahan` varchar(100) NOT NULL
+
+INSERT INTO `bahan_makanan` (`id_bahan`, `nama_bahan`, `jumlah_bahan`, `harga_bahan`) VALUES
+('01', 'tomat', 250, '5000'),
+('02', 'jagung', 300, '7000'),
+('03', 'strwaberry', 1000, '5000');
+
+SELECT * FROM `bahan_makanan`
