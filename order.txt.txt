@@ -1,0 +1,9 @@
+CREATE TABLE `IMPAL`.`order` ( `id_pesanan` VARCHAR(20) NOT NULL , `nama_pesanan` VARCHAR(100) NOT NULL , `jumlah_pesanan` INT(1000) NOT NULL , PRIMARY KEY (`id_pesanan`(20))) ENGINE = InnoDB;
+
+INSERT INTO `order` (`id_pesanan`, `nama_pesanan`, `jumlah_pesanan`) VALUES ('01', 'cheese cake', '2')
+
+INSERT INTO `order` (`id_pesanan`, `nama_pesanan`, `jumlah_pesanan`) VALUES ('02', 'rainbow cake', '4')
+
+SELECT * FROM `order` WHERE id_pesanan = 01
+
+SELECT * FROM `order` WHERE nama_pesanan = 'rainbow cake'
