@@ -1,0 +1,16 @@
+CREATE TABLE `pegawai` (
+  `id_pegawai` varchar(20) COLLATE utf8_bin NOT NULL,
+  `nama_pegawai` varchar(100) COLLATE utf8_bin NOT NULL,
+  `alamat_pegawai` varchar(1000) COLLATE utf8_bin NOT NULL,
+  `nomor_telepon` varchar(20) COLLATE utf8_bin NOT NULL,
+  `jabatan` varchar(50) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+
+INSERT INTO `pegawai` (`id_pegawai`, `nama_pegawai`, `alamat_pegawai`, `nomor_telepon`, `jabatan`) VALUES ('P002', 'Anis', 'PGA Bandung', '082218312966', 'Kasir');
+
+
+SELECT * FROM `pegawai`
+
+
+SELECT 'id_pegawai', `nama_pegawai` FROM `pegawai` WHERE nama_pegawai = 'Anis' 
